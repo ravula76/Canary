@@ -1,1 +1,2 @@
 This is merging from terminal
+Practicing pushing file termianal
