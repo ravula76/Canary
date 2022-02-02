@@ -1,0 +1,17 @@
+---
+- name: Create an EC2 instance
+  hosts: localhost
+  
+  tasks:
+    - name: Launch instance
+      ec2_instance:
+         key_name: Betatest
+         aws_access_key: AKIAV5OA52RNV4HFX4FL
+         aws_secret_key: be7fJfwcZXsk8Qicpdq6Fwy05pLvJmwjGU75XQh
+         instance_type: t2.micro         
+         image: ami-002068ed284fb165b
+         region: us-east-2
+         wait: yes
+         count: 1
+         vpc_subnet_id: subnet-0917d7a782dc2ccba
+         assign_public_ip: yes
